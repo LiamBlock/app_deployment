@@ -1,0 +1,25 @@
+version: "3"
+services:
+  reverse-proxy:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - 40080:80
+      - 40443:443
+      - 40081:81
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+  api:
+    image: liamblock/3pmapi:latest
+    container_name: "api"
+    ports:
+    - 48000:8000
+  website:
+    image: httpd:latest
+    container_name: appsliamblockcom
+    ports:
+      - '8080:80'
+    volumes:
+      - ./website:/usr/local/apache2/htdocs
