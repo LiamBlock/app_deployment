@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./resources/bootstrap.min.css" rel="stylesheet">
+<script src="./resources/bootstrap.bundle.min.js"></script>
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Liam Block Apps</title>
 </head>
 <body>
-<div class="background">
-  <div class="background-img">
-    <img src="./resources/background.jpg">
-    <div class="background-text-centered">Liam Block</div>
+<div>
+  <div class="container-fluid no-padding">
+    <img src="./resources/background.jpg" class="img-fluid w-100 rounded" style="filter: brightness(50%)">
+      <div class="mask d-flex justify-content-center flex-column text-center">
+        <p>Liam Block</p>
+      </div>
   </div>
   <div class="container">
-    <div class="panel app-table">
-
-      <div class="app">
-        <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="app-img">
-        <h2 class="app-header">3PM API</h2>
-        <span class="app-description">An API for the English Football Leagues</span>
-        <a href="#/" class="app-button">Go to 3PM</a>
+    <div class="row">
+      <div class="col text-center border rounded">
+        <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="img-responsive position-center">
+        <p class="h2">3PM API</p>
+        <p>An API for the English Football Leagues</p>
+        <button type="button" class="btn btn-primary position-center">Go to 3PM</button>
       </div>
 
-      <div class="app">
-        <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="app-img">
-        <h2 class="app-header">Coming Soon</h2>
-        <span class="app-description">Coming Soon</span>
-        <a href="#/" class="app-button is-featured">Coming Soon</a>
+      <div class="col text-center border rounded">
+        <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="">
+        <p class="h2">Coming Soon</p>
+        <p>Coming Soon</p>
+        <button type="button" class="btn btn-primary">Coming Soon</button>
       </div>
 
-      <div class="app">
-        <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="app-img">
-        <h2 class="app-header">Coming Soon</h2>
-        <span class="app-description">Coming Soon</span>
-        <a href="#/" class="app-button is-featured">Coming Soon</a>
+      <div class="col text-center border rounded">
+        <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="">
+        <p class="h2">Coming Soon</p>
+        <p>Coming Soon</p>
+        <button type="button" class="btn btn-primary">Coming Soon</button>
       </div>
 
     </div>
