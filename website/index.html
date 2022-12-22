@@ -7,39 +7,70 @@
     <meta charset="UTF-8">
     <title>Liam Block Apps</title>
 </head>
-<body>
-<div>
-  <div class="container-fluid no-padding">
-    <img src="./resources/background.jpg" class="img-fluid w-100 rounded" style="filter: brightness(50%)">
-      <div class="mask d-flex justify-content-center flex-column text-center">
-        <p>Liam Block</p>
-      </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col text-center border rounded">
-        <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="img-responsive position-center">
-        <p class="h2">3PM API</p>
-        <p>An API for the English Football Leagues</p>
-        <button type="button" class="btn btn-primary position-center">Go to 3PM</button>
-      </div>
-
-      <div class="col text-center border rounded">
-        <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="">
-        <p class="h2">Coming Soon</p>
-        <p>Coming Soon</p>
-        <button type="button" class="btn btn-primary">Coming Soon</button>
-      </div>
-
-      <div class="col text-center border rounded">
-        <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="">
-        <p class="h2">Coming Soon</p>
-        <p>Coming Soon</p>
-        <button type="button" class="btn btn-primary">Coming Soon</button>
-      </div>
-
+<!--- Background Images --->
+<div id="slides" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target=#slides" data-slide-to="0" class="active"></li>
+  </ul>
+</div>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="./resources/background.jpg" style="filter: brightness(50%)">
+    <div class="carousel-caption">
+      <h1 class="display-2 text-uppercase" style="font-family: Monaco">Liam Block</h1>
+      <hr>
+      <h3 class="m-5">Apps</h3>
+      <button type="button" class="btn btn-outline-secondary btn-lg">Back to liamblock.com</button>
     </div>
   </div>
 </div>
-</body>
+
+<!--- Jumbotron --->
+<div class="container">
+  <div class="row jumbotron mt-4 p-5 rounded bg-light">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+      <p class="lead">Friends and family access to my currently deployed applications. Just for fun.</p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Request Access</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- Welcome --->
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12 m-5">
+      <h1 class="display-4">Applications</h1>
+    </div>
+    <hr style="width: 50%; margin: auto">
+    <div class="col-12 m-5">
+      <p class="lead">All applications developed in my spare time, from scratch.</p>
+    </div>
+  </div>
+</div>
+
+<!--- Application Columns --->
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="./resources/futbol-solid.svg" style="height: 50px; width: 50px;">
+      <h3>3PM API</h3>
+      <p>An API for the English Football Leagues</p>
+      <a type="button" href="https://3pm.liamblock.com" class="btn btn-outline-secondary btn-md">3PM API</a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="./resources/server-solid.svg" style="height: 50px; width: 50px;">
+      <h3>Web Deployment</h3>
+      <p>Checkout how I've deployed my applications and this website, using Bootstrap 5.</p>
+      <a href="https://github.com/LiamBlock/app_deployment" type="button" class="btn btn-outline-secondary btn-md">Deployment</a>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <img src="./resources/code-pull-request-solid.svg" style="height: 50px; width: 50px;">
+      <h3>Coming Soon</h3>
+      <p>More applications coming soon.</p>
+      <a href="https://github.com/LiamBlock" type="button" class="btn btn-outline-secondary btn-md">GitHub</a>
+    </div>
+  </div>
+</div>
 </html>
